@@ -1,0 +1,117 @@
+<div class="page-header">
+  <div class="container">
+    <h1>Nuestros Productos</h1>
+    <p>Descubre nuestra variedad de panes, bollería y dulces artesanales</p>
+  </div>
+</div>
+
+<section class="products-section">
+  <div class="container">
+    <div class="filters">
+      <h3>Filtrar por categoría:</h3>
+      <div class="filter-buttons">
+        <button 
+          *ngFor="let categoria of categorias" 
+          [class.active]="categoriaSeleccionada === categoria"
+          (click)="seleccionarCategoria(categoria)"
+          class="filter-btn">
+          {{ categoria }}
+        </button>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      <div *ngFor="let producto of filtrarProductos()" class="product-card">
+        <div class="product-image">
+          <img [src]="producto.imagen" [alt]="producto.nombre" />
+        </div>
+        <div class="product-info">
+          <div class="product-category">{{ producto.categoria }}</div>
+          <h3 class="product-name">{{ producto.nombre }}</h3>
+          <p class="product-description">{{ producto.descripcion }}</p>
+          <div class="product-price">S/{{ producto.precio | number:'1.2-2' }}</div>
+          <button class="btn btn-primary">Más Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <h2>¿Por qué elegir nuestros productos?</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Frescura diaria</h3>
+        <p>Horneamos todos nuestros productos cada día, garantizando sabor y calidad.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Ingredientes naturales</h3>
+        <p>Solo usamos ingredientes de primera calidad, sin conservantes artificiales.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Variedad artesanal</h3>
+        <p>Pan, bollería y dulces hechos a mano para todos los gustos.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Atención personalizada</h3>
+        <p>Asesoramos y recomendamos productos según tus necesidades y preferencias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="container">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"El pan más fresco y delicioso que he probado. ¡Recomiendo 100%!"</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar"></div>
+          <div class="author-info">
+            <h4>Lucía Ramírez</h4>
+            <span>Cliente habitual</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"La bollería artesanal es exquisita y siempre fresca. ¡Mis favoritos!"</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar"></div>
+          <div class="author-info">
+            <h4>Carlos Pérez</h4>
+            <span>Cliente frecuente</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"El dulce de la casa es perfecto, y el trato del personal es muy amable."</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar"></div>
+          <div class="author-info">
+            <h4>María López</h4>
+            <span>Amante del pan artesanal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>¿Quieres probar nuestro pan artesanal?</h2>
+    <p>Contáctanos y descubre la frescura y calidad en cada producto</p>
+    <div class="cta-buttons">
+      <a href="mailto:ventas@panaderia.com" class="btn btn-primary">Contactar Ventas</a>
+      <a routerLink="/nosotros" class="btn btn-secondary">Conocer Más</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,276 @@
+/* ===========================================
+   PAGE HEADER
+=========================================== */
+.page-header {
+  background: linear-gradient(135deg, #d98c42 0%, #e67e22 100%);
+  color: #fffaf0;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: 'Pacifico', cursive; /* estilo artesanal */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.page-header p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* ===========================================
+   ABOUT SECTION
+=========================================== */
+.about-section {
+  padding: 80px 0;
+  background: #fff7ef; /* fondo cálido */
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  color: #4a2c2a;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+.about-text h3 {
+  color: #d98c42;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+.about-text p {
+  color: #5a4a3e;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #fffaf0 0%, #f5deb3 100%);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(217,140,66,0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-placeholder:hover {
+  transform: scale(1.05);
+}
+
+.image-placeholder i {
+  font-size: 4rem;
+  color: #d98c42;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.image-placeholder p {
+  color: #4a2c2a;
+  font-weight: 600;
+}
+
+/* ===========================================
+   VALUES SECTION
+=========================================== */
+.values-section {
+  background-color: #fff7ef;
+  padding: 80px 0;
+}
+
+.values-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #4a2c2a;
+  font-family: 'Amatic SC', cursive;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: #fffaf0;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(217,140,66,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(217,140,66,0.25);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #d98c42;
+}
+
+.value-card h3 {
+  color: #4a2c2a;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #5a4a3e;
+  line-height: 1.6;
+}
+
+/* ===========================================
+   TEAM SECTION
+=========================================== */
+.team-section {
+  padding: 80px 0;
+}
+
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #4a2c2a;
+  font-family: 'Amatic SC', cursive;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background: #fffaf0;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(217,140,66,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(217,140,66,0.25);
+}
+
+.member-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #d98c42;
+}
+
+.team-member h3 {
+  color: #4a2c2a;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.member-role {
+  color: #d98c42;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.member-description {
+  color: #5a4a3e;
+  line-height: 1.6;
+}
+
+/* ===========================================
+   CTA SECTION
+=========================================== */
+.cta-section {
+  background: linear-gradient(135deg, #d98c42 0%, #e67e22 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #d98c42;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+/* ===========================================
+   CONTAINER & MEDIA QUERIES
+=========================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

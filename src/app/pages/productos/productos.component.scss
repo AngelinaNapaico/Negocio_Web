@@ -1,0 +1,323 @@
+/* ===== Page Header ===== */
+.page-header {
+  background: linear-gradient(135deg, #f5b97a 0%, #e67e22 100%);
+  color: #fff8f0;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  }
+
+  p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== Products Section ===== */
+.products-section {
+  padding: 80px 20px;
+  background-color: #fff8f0;
+
+  .filters {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 1.6rem;
+      color: #8b4c2c;
+      margin-bottom: 1rem;
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+
+      .filter-btn {
+        padding: 10px 20px;
+        border: 2px solid #e67e22;
+        border-radius: 30px;
+        background-color: transparent;
+        color: #e67e22;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &:hover, &.active {
+          background-color: #e67e22;
+          color: #fff8f0;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      }
+
+      .product-image {
+        height: 220px;
+        background: #fff3e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+          width: auto;
+          max-height: 100%;
+          object-fit: contain;
+          border-radius: 12px;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+
+      .product-info {
+        padding: 1.5rem;
+
+        .product-category {
+          color: #e67e22;
+          font-weight: 600;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+          letter-spacing: 0.5px;
+        }
+
+        .product-name {
+          color: #8b4c2c;
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 0.75rem;
+        }
+
+        .product-description {
+          font-size: 1rem;
+          color: #5a3e36;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+        }
+
+        .product-price {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #e67e22;
+          margin-bottom: 1rem;
+        }
+
+        .btn {
+          width: 100%;
+          background-color: #e67e22;
+          color: #fff8f0;
+          border-radius: 30px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #d96b1f;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ===== Features Section ===== */
+.features-section {
+  background-color: #fff3e6;
+  padding: 80px 20px;
+
+  h2 {
+    text-align: center;
+    color: #8b4c2c;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .feature-item {
+      background: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        color: #8b4c2c;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #5a3e36;
+      }
+    }
+  }
+}
+
+/* ===== Testimonials Section ===== */
+.testimonials-section {
+  padding: 80px 20px;
+
+  h2 {
+    text-align: center;
+    color: #8b4c2c;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .testimonial-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+
+      .testimonial-content {
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        color: #5a3e36;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .author-avatar {
+          width: 50px;
+          height: 50px;
+          background-color: #e67e22;
+          border-radius: 50%;
+        }
+
+        .author-info h4 {
+          margin: 0;
+          font-size: 1.1rem;
+          color: #8b4c2c;
+        }
+
+        .author-info span {
+          font-size: 0.9rem;
+          color: #d96b1f;
+        }
+      }
+    }
+  }
+}
+
+/* ===== Call to Action ===== */
+.cta-section {
+  background: linear-gradient(135deg, #e67e22 0%, #d96b1f 100%);
+  color: #fff8f0;
+  text-align: center;
+  padding: 80px 20px;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .btn-primary {
+      background-color: #fff8f0;
+      color: #e67e22;
+      border-radius: 30px;
+      font-weight: 700;
+      padding: 12px 30px;
+
+      &:hover {
+        background-color: #f5b97a;
+        color: #8b4c2c;
+      }
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: #fff8f0;
+      border: 2px solid #fff8f0;
+      border-radius: 30px;
+      font-weight: 700;
+      padding: 12px 30px;
+
+      &:hover {
+        background-color: #fff8f0;
+        color: #e67e22;
+      }
+    }
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .products-grid, .features-grid, .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons, .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-header p {
+    font-size: 1.1rem;
+  }
+}
